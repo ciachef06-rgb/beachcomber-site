@@ -152,12 +152,12 @@ export default function BeachcomberWebsite() {
     <Logo />
   </div>
 
-  <nav className="hidden flex-1 items-center justify-center gap-10 md:flex">>
+  <nav className="hidden flex-1 items-center justify-center gap-10 md:flex">
             {navItems.map((item, index) => (
               <a key={item} href={item === "Home" ? "#top" : `#${item.toLowerCase()}`} className={`text-lg font-black transition hover:text-[#E56419] ${index === 0 ? "text-[#E56419] underline decoration-2 underline-offset-[14px]" : "text-[#07313B]"}`}>{item}</a>
             ))}
           </nav>
-          <a href="#contact" className="ml-20 hidden rounded-full bg-[#07313B] px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-[#0F6170] md:inline-flex">>Order Catering</a>
+<a href="#contact" className="ml-20 hidden rounded-full bg-[#07313B] px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-[#0F6170] md:inline-flex">Order Catering</a>
           <button className="rounded-xl p-2 md:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open menu" type="button"><Icon name={mobileOpen ? "x" : "menu"} /></button>
         </div>
         {mobileOpen && <div className="border-t border-orange-100 bg-[#FFF4E2] px-5 pb-5 md:hidden">{navItems.map((item) => <a key={item} href={item === "Home" ? "#top" : `#${item.toLowerCase()}`} onClick={() => setMobileOpen(false)} className="block rounded-xl px-3 py-3 font-black text-[#07313B] hover:bg-orange-100">{item}</a>)}</div>}

@@ -225,8 +225,8 @@ export default function BeachcomberWebsite() {
           </div>
         </section>
 
-        <section id="contact" className="bg-[#FFF8ED] px-5 py-20 md:px-8">
-          <SectionHeader eyebrow="Contact" title="Book the trailer or ask a question."></SectionHeader>
+ <section id="contact" className="bg-[#FFF8ED] px-5 py-20 md:px-8">
+          {/* Contact heading removed */}
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-[0.85fr_1.15fr]">
             <Card><div className="space-y-6 p-6">{[{ icon: "mapPin", label: "Service Area", value: "Virginia Beach / Hampton Roads" }, { icon: "mail", label: "Email", value: "vbbeachcomber@gmail.com" }, { icon: "phone", label: "Phone", value: "(757) 386-1426" }].map((row) => <div key={row.label} className="flex gap-4"><Icon name={row.icon} className="h-6 w-6 text-[#E56419]" /><div><p className="font-black">{row.label}</p><p className="text-[#1C2F35]">{row.value}</p></div></div>)}</div></Card>
             <Card>
@@ -294,7 +294,7 @@ export default function BeachcomberWebsite() {
 
     <div className="flex items-center gap-3">
       <a
-        href="https://instagram.com/vbbeachcomber"
+        href="https://instagram.com/vbbeachvomber"
         target="_blank"
         rel="noreferrer"
         className="rounded-full border border-orange-200 bg-white/70 px-4 py-2 text-sm font-black text-[#07313B] transition hover:bg-orange-100 hover:text-[#E56419]"
@@ -302,10 +302,13 @@ export default function BeachcomberWebsite() {
         Instagram
       </a>
 
-    © 2026 Be@chcomber LLC. All rights reserved.
-  </p>
-</div>
-      </footer>
+    </div>
+
+    <p className="text-sm font-semibold text-[#9D3C10]">
+      © 2026 Be@chcomber LLC. All rights reserved.
+    </p>
+  </div>
+</footer>
     </div>
   );
 }

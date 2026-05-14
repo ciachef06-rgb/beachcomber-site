@@ -288,11 +288,20 @@ export default function BeachcomberWebsite() {
         </section>
       </main>
 
-      <footer className="border-t border-orange-200 bg-[#FFF4E2] px-5 py-10 md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center">
-  <Logo />
-  <SocialLinks />
-  <p className="text-sm font-semibold text-[#9D3C10]">
+<footer className="border-t border-orange-200 bg-[#FFF4E2] px-5 py-10 md:px-8">
+  <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center">
+    <Logo />
+
+    <div className="flex items-center gap-3">
+      <a
+        href="https://instagram.com/vbbeachcomber"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full border border-orange-200 bg-white/70 px-4 py-2 text-sm font-black text-[#07313B] transition hover:bg-orange-100 hover:text-[#E56419]"
+      >
+        Instagram
+      </a>
+
     © 2026 Be@chcomber LLC. All rights reserved.
   </p>
 </div>

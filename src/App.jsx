@@ -39,6 +39,9 @@ const events = [
 ];
 
 const navItems = ["Home", "Menu", "About", "Catering", "Locations", "Contact"];
+const socialLinks = [
+  { label: "Instagram", href: "https://instagram.com/vbbeachcomber" }
+];
 
 function runBasicDataTests() {
   console.assert(Array.isArray(menuItems), "menuItems should be an array");
@@ -66,7 +69,23 @@ function Icon({ name, className = "h-6 w-6" }) {
   };
   return icons[name] || icons.shell;
 }
-
+function SocialLinks() {
+  return (
+    <div className="flex items-center gap-3">
+      {socialLinks.map((social) => (
+        <a
+          key={social.label}
+          href={social.href}
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-full border border-orange-200 bg-white/70 px-4 py-2 text-sm font-black text-[#07313B] transition hover:bg-orange-100 hover:text-[#E56419]"
+        >
+          {social.label}
+        </a>
+      ))}
+    </div>
+  );
+}
 function Logo() {
   return (
     <a href="#top" className="block leading-none text-[#07313B]">
@@ -270,7 +289,13 @@ export default function BeachcomberWebsite() {
       </main>
 
       <footer className="border-t border-orange-200 bg-[#FFF4E2] px-5 py-10 md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center"><Logo /><p className="text-sm font-semibold text-[#9D3C10]">© 2026 Be@chcomber LLC. All rights reserved.</p></div>
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 md:flex-row md:items-center">
+  <Logo />
+  <SocialLinks />
+  <p className="text-sm font-semibold text-[#9D3C10]">
+    © 2026 Be@chcomber LLC. All rights reserved.
+  </p>
+</div>
       </footer>
     </div>
   );

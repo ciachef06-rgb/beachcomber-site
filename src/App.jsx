@@ -226,9 +226,9 @@ export default function BeachcomberWebsite() {
         </section>
 
         <section id="contact" className="bg-[#FFF8ED] px-5 py-20 md:px-8">
-          <SectionHeader eyebrow="Contact" title="Book the trailer or ask a question.">This form is a front-end placeholder. When you are ready to publish, connect it to email, Google Forms, Wix, Squarespace, or a booking system.</SectionHeader>
+          <SectionHeader eyebrow="Contact" title="Book the trailer or ask a question."></SectionHeader>
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-[0.85fr_1.15fr]">
-            <Card><div className="space-y-6 p-6">{[{ icon: "mapPin", label: "Service Area", value: "Virginia Beach / Hampton Roads" }, { icon: "mail", label: "Email", value: "Add your business email" }, { icon: "phone", label: "Phone", value: "Add your business phone" }].map((row) => <div key={row.label} className="flex gap-4"><Icon name={row.icon} className="h-6 w-6 text-[#E56419]" /><div><p className="font-black">{row.label}</p><p className="text-[#1C2F35]">{row.value}</p></div></div>)}</div></Card>
+            <Card><div className="space-y-6 p-6">{[{ icon: "mapPin", label: "Service Area", value: "Virginia Beach / Hampton Roads" }, { icon: "mail", label: "Email", value: "vbbeachcomber@gmail.com" }, { icon: "phone", label: "Phone", value: "(757) 386-1426" }].map((row) => <div key={row.label} className="flex gap-4"><Icon name={row.icon} className="h-6 w-6 text-[#E56419]" /><div><p className="font-black">{row.label}</p><p className="text-[#1C2F35]">{row.value}</p></div></div>)}</div></Card>
             <Card>
               <div className="p-6">
                 <form

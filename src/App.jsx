@@ -215,7 +215,7 @@ export default function BeachcomberWebsite() {
               <p className="mb-3 text-sm font-black uppercase tracking-[0.25em] text-[#E56419]">About</p>
               <h2 className="font-serif text-5xl font-black tracking-tight text-[#07313B] md:text-6xl">A chef-led trailer with a Virginia Beach heart.</h2>
               <p className="mt-6 text-lg leading-8 text-[#1C2F35]">The Be@chcomber was created to become a leading mobile seafood dining experience in Virginia Beach: fresh, approachable, creative, and rooted in the relaxed treasure-finding spirit of a true beachcomber.</p>
-              <p className="mt-4 text-lg leading-8 text-[#1C2F35]">Led by Executive Chef Robert Scheve, a Culinary Institute of America graduate with more than 20 years in the food industry, the trailer combines culinary skill, speed, hospitality, and a menu designed to stand out from typical food trailer fare.</p>
+              <p className="mt-4 text-lg leading-8 text-[#1C2F35]">Led by Executive Chef Bobby Scheve, a Culinary Institute of America graduate with more than 20 years in the food industry, the trailer combines culinary skill, speed, hospitality, and a menu designed to stand out from typical food trailer fare.</p>
             </div>
             <TrailerHeroArt />
           </div>

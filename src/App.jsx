@@ -260,10 +260,10 @@ export default function BeachcomberWebsite() {
                       placeholder="Phone"
                     />
                     <input
-                      name="eventDate"
-                      className="rounded-2xl border border-orange-200 px-4 py-3 outline-none focus:border-[#E56419]"
-                      placeholder="Event date"
-                    />
+  name="eventDate"
+  type="date"
+  className="rounded-2xl border border-orange-200 px-4 py-3 outline-none focus:border-[#E56419]"
+/>
                   </div>
 
                   <input

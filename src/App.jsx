@@ -5,9 +5,9 @@ const menuItems = [
   {
     category: "Signature Selections",
     items: [
-      { name: "She Crab Soup", desc: "A rich, creamy Atlantic classic finished with sherry and seasoned to perfection.", price: "10" },
+      { name: "She Crab Soup", desc: "A rich, creamy Atlantic classic finished with sherry and seasoned to perfection.", price: "$10" },
       { name: "Crab Cake Sandwich", desc: "Premium lump crab meat on a toasted artisan bun with spicy, creamy dynamite sauce.", price: "$20" },
-      { name: "VB Poutine Fries", desc: "Crispy Old Bay fries topped with our signature rich, creamy She Crab Soup.", price: "12" },
+      { name: "VB Poutine Fries", desc: "Crispy Old Bay fries topped with our signature rich, creamy She Crab Soup.", price: "$12" },
       { name: "Flounder Nuggets", desc: "Crispy, golden-fried Atlantic flounder served with lemon and house-made tartar sauce.", price: "$15" },
       { name: "Catch of the Day", desc: "Fresh local seafood prepared seared, blackened, or fried. Ask about today’s local landing.", price: "Market" },
     ],
@@ -23,11 +23,11 @@ const menuItems = [
   {
     category: "Sides & Refreshments",
     items: [
-      { name: "Beignet-Style Hushpuppies", desc: "Light, fluffy, slightly sweet hushpuppies with a delicate savory-sweet coastal texture.", price: "6" },
-      { name: "Old Bay Fries", desc: "Crispy fries tossed with classic Old Bay seasoning.", price: "5" },
-      { name: "Tangy Cole Slaw", desc: "Cool, creamy, and tangy slaw built to pair with seafood.", price: "4" },
+      { name: "Beignet-Style Hushpuppies", desc: "Light, fluffy, slightly sweet hushpuppies with a delicate savory-sweet coastal texture.", price: "$6" },
+      { name: "Old Bay Fries", desc: "Crispy fries tossed with classic Old Bay seasoning.", price: "$5" },
+      { name: "Tangy Cole Slaw", desc: "Cool, creamy, and tangy slaw built to pair with seafood.", price: "$4" },
       { name: "Kettle Chips", desc: "Simple, crunchy, and satisfying.", price: "4" },
-      { name: "Refreshments", desc: "Sweet tea, unsweet tea, assorted sodas, and bottled water.", price: "2-3 " },
+      { name: "Refreshments", desc: "Sweet tea, unsweet tea, assorted sodas, and bottled water.", price: "$2-3 " },
     ],
   },
 ];

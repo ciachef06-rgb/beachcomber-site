@@ -146,36 +146,90 @@ export default function BeachcomberWebsite() {
 
   return (
     <div id="top" className="min-h-screen bg-[#FFF4E2] text-[#07313B]">
-      <header className="sticky top-0 z-50 border-b border-orange-100 bg-[#FFF4E2]/95 backdrop-blur-xl">
-<div className="mx-auto flex max-w-7xl items-center px-5 py-5 md:px-8">
-  <div className="mr-20">
-    <Logo />
+<header className="sticky top-0 z-50 border-b border-orange-100 bg-[#FFF4E2]/95 backdrop-blur-xl">
+  <div className="mx-auto flex max-w-7xl items-center px-5 py-5 md:px-8">
+    <div className="mr-20">
+      <Logo />
+    </div>
+
+    <nav className="hidden flex-1 items-center justify-center gap-10 md:flex">
+      {navItems.map((item, index) => (
+        <a
+          key={item}
+          href={item === "Home" ? "#top" : `#${item.toLowerCase()}`}
+          className={`text-lg font-black transition hover:text-[#E56419] ${
+            index === 0
+              ? "text-[#E56419] underline decoration-2 underline-offset-[14px]"
+              : "text-[#07313B]"
+          }`}
+        >
+          {item}
+        </a>
+      ))}
+    </nav>
+
+    <a
+      href="
+        href="https://roaminghunger.com/bechcomber/"
+      target="_blank"
+      rel="noreferrer"
+      className="ml-20 hidden rounded-full bg-[#07313B] px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-[#0F6170] md:inline-flex"
+    >
+      Book Catering
+    </a>
+
+    <a
+      href="https://www.airbnb.com/hosting/listings/service/7089590/view-your-service"
+      target="_blank"
+      rel="noreferrer"
+      className="ml-4 hidden rounded-full border border-[#07313B] bg-transparent px-8 py-4 text-lg font-black text-[#07313B] transition hover:bg-[#07313B] hover:text-white md:inline-flex"
+    >
+      Chef Experiences
+    </a>
+
+    <button
+      className="ml-auto rounded-xl p-2 md:hidden"
+      onClick={() => setMobileOpen(!mobileOpen)}
+      aria-label="Open menu"
+      type="button"
+    >
+      <Icon name={mobileOpen ? "x" : "menu"} />
+    </button>
   </div>
 
-  <nav className="hidden flex-1 items-center justify-center gap-10 md:flex">
-            {navItems.map((item, index) => (
-              <a key={item} href={item === "Home" ? "#top" : `#${item.toLowerCase()}`} className={`text-lg font-black transition hover:text-[#E56419] ${index === 0 ? "text-[#E56419] underline decoration-2 underline-offset-[14px]" : "text-[#07313B]"}`}>{item}</a>
-            ))}
-          </nav>
-<a
-  href="https://roaminghunger.com/bechcomber/"
-  target="_blank"
-  rel="noreferrer"
-  className="ml-20 hidden rounded-full bg-[#07313B] px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-[#0F6170] md:inline-flex"
->
-  Book Catering
-  <a
-  href="PASTE_YOUR_AIRBNB_URL_HERE"
-  target="_blank"
-  rel="noreferrer"
-  className="ml-4 hidden rounded-full border border-[#07313B] bg-transparent px-8 py-4 text-lg font-black text-[#07313B] transition hover:bg-[#07313B] hover:text-white md:inline-flex"
->
-  Chef Experiences
-</a>
-          <button className="rounded-xl p-2 md:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open menu" type="button"><Icon name={mobileOpen ? "x" : "menu"} /></button>
-        </div>
-        {mobileOpen && <div className="border-t border-orange-100 bg-[#FFF4E2] px-5 pb-5 md:hidden">{navItems.map((item) => <a key={item} href={item === "Home" ? "#top" : `#${item.toLowerCase()}`} onClick={() => setMobileOpen(false)} className="block rounded-xl px-3 py-3 font-black text-[#07313B] hover:bg-orange-100">{item}</a>)}</div>}
-      </header>
+  {mobileOpen && (
+    <div className="border-t border-orange-100 bg-[#FFF4E2] px-5 pb-5 md:hidden">
+      {navItems.map((item) => (
+        <a
+          key={item}
+          href={item === "Home" ? "#top" : `#${item.toLowerCase()}`}
+          onClick={() => setMobileOpen(false)}
+          className="block rounded-xl px-3 py-3 font-black text-[#07313B] hover:bg-orange-100"
+        >
+          {item}
+        </a>
+      ))}
+
+      <a
+        href="https://roaminghunger.com/bechcomber/"
+        target="_blank"
+        rel="noreferrer"
+        className="mt-3 block rounded-xl bg-[#07313B] px-3 py-3 text-center font-black text-white"
+      >
+        Book Catering
+      </a>
+
+      <a
+        href="https://www.airbnb.com/hosting/listings/service/7089590/view-your-service"
+        target="_blank"
+        rel="noreferrer"
+        className="mt-3 block rounded-xl border border-[#07313B] px-3 py-3 text-center font-black text-[#07313B]"
+      >
+        Chef Experiences
+      </a>
+    </div>
+  )}
+</header>
 
       <main>
         <section className="relative overflow-hidden border-b border-orange-100 bg-[linear-gradient(110deg,#FFF4E2_0%,#FFF4E2_38%,rgba(255,211,128,0.42)_48%,rgba(230,100,25,0.24)_100%)] px-5 py-14 md:px-8 md:py-20">

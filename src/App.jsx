@@ -164,6 +164,13 @@ export default function BeachcomberWebsite() {
   className="ml-20 hidden rounded-full bg-[#07313B] px-8 py-4 text-lg font-black text-white shadow-lg transition hover:bg-[#0F6170] md:inline-flex"
 >
   Book Catering
+  <a
+  href="PASTE_YOUR_AIRBNB_URL_HERE"
+  target="_blank"
+  rel="noreferrer"
+  className="ml-4 hidden rounded-full border border-[#07313B] bg-transparent px-8 py-4 text-lg font-black text-[#07313B] transition hover:bg-[#07313B] hover:text-white md:inline-flex"
+>
+  Chef Experiences
 </a>
           <button className="rounded-xl p-2 md:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open menu" type="button"><Icon name={mobileOpen ? "x" : "menu"} /></button>
         </div>

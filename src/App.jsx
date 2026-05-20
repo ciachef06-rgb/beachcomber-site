@@ -30,6 +30,26 @@ const menuItems = [
       { name: "Refreshments", desc: "Sweet tea, unsweet tea, assorted sodas, and bottled water.", price: "$2-3 " },
     ],
   },
+    {
+    category: "Kids Menu",
+    items: [
+      {
+        name: "Crispy Chicken Bites",
+        desc: "Golden-fried chicken bites served with fries and your choice of dipping sauce.",
+        price: "$8",
+      },
+      {
+        name: "Beachcomber Grilled Cheese",
+        desc: "Buttery toasted grilled cheese served with crispy fries.",
+        price: "$7",
+      },
+      {
+        name: "Popcorn Shrimp Basket",
+        desc: "Crispy popcorn shrimp served with fries and house-made cocktail sauce.",
+        price: "$9",
+      },
+    ],
+  },
 ];
 
 const events = [
@@ -45,7 +65,7 @@ const socialLinks = [
 
 function runBasicDataTests() {
   console.assert(Array.isArray(menuItems), "menuItems should be an array");
-  console.assert(menuItems.length === 3, "menuItems should have three menu categories");
+console.assert(menuItems.length === 4, "menuItems should have four menu categories");
   console.assert(menuItems.some((group) => group.category === "Signature Selections"), "Signature Selections category should exist");
   console.assert(menuItems.every((group) => Array.isArray(group.items) && group.items.length > 0), "Every menu category should contain at least one item");
   console.assert(events.length === 3, "events should contain three cards");
